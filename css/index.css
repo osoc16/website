@@ -58,6 +58,9 @@ h2 {
   font-size: 1.3em;
   line-height: 1.6em; }
 
+.clear {
+  clear: both; }
+
 /* =============================
 * NAVIGATION
 * ============================== */
@@ -523,28 +526,46 @@ h2 {
 * ============================== */
 .projects {
   background: #FFF !important; }
-  .projects .project img {
-    padding-left: 15px;
-    padding-top: 25px;
-    max-width: 150px; }
-  .projects .project h3 {
-    text-align: left;
-    font-size: 1.3em;
-    font-weight: 700;
-    text-transform: none; }
-  .projects .project p.sponsor {
-    font-style: italic; }
-  .projects .project p {
-    line-height: 1.5em;
-    font-size: 1.2em; }
+  .projects .constraint .project .project-image {
+    width: 25%;
+    float: left; }
+    .projects .constraint .project .project-image img {
+      padding-left: 15px;
+      padding-top: 25px;
+      max-width: 150px; }
+  .projects .constraint .project .project-content {
+    width: 75%;
+    float: right; }
+    .projects .constraint .project .project-content h3 {
+      text-align: left;
+      font-size: 1.3em;
+      font-weight: 700;
+      text-transform: none; }
+    .projects .constraint .project .project-content p.sponsor {
+      font-style: italic; }
+    .projects .constraint .project .project-content p {
+      line-height: 1.5em;
+      font-size: 1.2em; }
   .projects .text-center {
     padding-bottom: 50px; }
   .projects .btn-primary {
     text-align: center;
     margin: 10px auto; }
 
+@media screen and (max-width: 768px) {
+  .projects .constraint .project .project-image {
+    float: none;
+    width: 100%;
+    text-align: center; }
+  .projects .constraint .project .project-content {
+    float: none;
+    width: 100%;
+    text-align: center; }
+    .projects .constraint .project .project-content h3 {
+      text-align: center; } }
+
 /* Change placeholder text-color
-   Do not group these rules 
+   Do not group these rules
 */
 *::-webkit-input-placeholder {
   color: #606060; }

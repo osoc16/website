@@ -70,6 +70,10 @@ h2 {
     line-height: 1.6em;
 }
 
+.clear {
+  clear: both;
+}
+
 /* =============================
 * NAVIGATION
 * ============================== */
@@ -100,27 +104,27 @@ h2 {
         margin-top: 20px;
         margin-left: 75px;
         list-style-type: none;
-        
+
         li {
             text-transform: uppercase;
             float: left;
             margin-right: 30px;
-            
+
             a {
                 text-decoration: none;
                 color: $color-dark-grey;
                 transition: all 0.1s ease-in-out;
-                
+
                 &:hover {
                     color: $color-green;
                 }
             }
-            
+
             .active {
                 color: $color-green;
                 transition: color 0.2s ease-in-out;
             }
-            
+
             .osoc-bold{
                 font-weight: 700;
                 text-transform: none;
@@ -131,7 +135,7 @@ h2 {
     .nav-toggle {
         display: none;
     }
-    
+
     @media screen and (max-width: 768px) {
         position: relative !important;
         width: auto !important;
@@ -164,7 +168,7 @@ h2 {
             float: none;
             width: 100%;
             margin: 0;
-            
+
             li {
                 float: none;
                 display: block;
@@ -215,7 +219,7 @@ h2 {
     background: $intro-bg;
     background-size: cover;
     background-position: center;
-    
+
     h1 {
         text-align: left;
         // If there is no big notice above the hero.h1, then margin-top = 305px;
@@ -231,18 +235,18 @@ h2 {
             margin-top: 60px;
         }
     }
-    
+
     p {
         color: $color-white;
         margin-right: 50px;
         text-align: left;
         margin-bottom: 45px;
-        
+
         @media screen and (max-width: 768px) {
             margin-left: 0;
         }
     }
-    
+
     @media screen and (max-width: 480px){
         h1 {
             margin-top: 65px !important;
@@ -269,7 +273,7 @@ h2 {
         padding-top: 40px;
         padding-bottom: 20px;
     }
-  
+
     .partners-gallery {
         display: -webkit-flex;
         display: flex;
@@ -279,7 +283,7 @@ h2 {
         align-items: center;
         -webkit-justify-content: center;
         justify-content: center;
-               
+
         .sponsor{
             display: block;
             margin-left: auto;
@@ -289,13 +293,13 @@ h2 {
             margin-bottom: 25px;
             opacity: 0.85;
             max-width: 200px;
-            
+
             &:hover {
                 opacity: 1;
             }
         }
     }
-    
+
     .partner-desc {
         a {
             color: $color-white;
@@ -342,7 +346,7 @@ h2 {
     background: $location-bg;
     background-size: cover;
     min-height: 600px;
-       
+
     @media screen and (max-width: 480px) {
         min-height: 500px;
     }
@@ -352,23 +356,23 @@ h2 {
         padding-top: 40px;
         padding-bottom: 15px;
     }
-    
+
     .tagline {
         text-align: center;
         margin-bottom: 25px;
         margin-top: 0;
     }
-    
+
     .map {
         max-width: 550px;
         margin-left: auto;
         margin-right: auto;
-        
+
         img {
             width: 100%;
         }
     }
-    
+
     .cities {
         top: -30px;
         max-width: 700px;
@@ -376,7 +380,7 @@ h2 {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        
+
         .date, .city, .place {
             line-height: 0.7em;
         }
@@ -386,7 +390,7 @@ h2 {
             font-size: 1.1em;
             padding-bottom: 0;
         }
-        
+
         .city {
             font-size: 1.7em;
             font-weight: 600;
@@ -401,7 +405,7 @@ h2 {
                 }
             }
         }
-        
+
         .place {
             font-size: 1em;
             font-weight: 400;
@@ -424,7 +428,7 @@ h2 {
         margin-bottom: 0;
         padding-top: 25px;
     }
-    
+
     .prev-logos {
         display: -webkit-flex;
         display: flex;
@@ -434,17 +438,17 @@ h2 {
         align-items: center;
         -webkit-justify-content: space-around;
         justify-content: space-around;
-        
+
         a {
             margin: 25px 20px;
-            
+
             img {
                 width: 130px;
-            }  
-            
+            }
+
             &:last-of-type {
                 margin-bottom: 35px;
-            }    
+            }
         }
     }
 }
@@ -455,7 +459,7 @@ h2 {
 
 .students{
     padding-bottom: 25px;
-    
+
     h2{
         margin-top: 40px;
         margin-bottom: 30px;
@@ -474,7 +478,7 @@ h2 {
         margin-top: 0px;
         margin-bottom: 0px;
     }
-    
+
     .skill-gallery {
         display: -webkit-flex;
         display: flex;
@@ -486,18 +490,18 @@ h2 {
         justify-content: space-between;
         list-style-type: none;
         padding-left: 0;
-        
+
         li {
             width: 33%;
-            
+
             @media screen and (max-width: 768px) {
                 width: 50%;
             }
-            
+
             @media screen and (max-width: 480px) {
                 width: 100%;
             }
-            
+
             .skill, .skill-desc {
                 color: $color-green;
                 display: block;
@@ -508,7 +512,7 @@ h2 {
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            
+
             .skill {
                 margin-top: 10px;
             }
@@ -527,7 +531,7 @@ h2 {
                 margin-right: auto;
                 margin-bottom: 20px;
             }
-        }     
+        }
     }
 }
 
@@ -539,12 +543,12 @@ h2 {
     justify-content:center;
     list-style-type: none;
     padding-left: 0;
-    
+
     li {
         width: 200px;
         padding: 15px;
         text-align: center;
-        
+
         img {
             -webkit-transition:-webkit-filter .33s;
             transition:filter .33s,-webkit-filter .33s;
@@ -554,7 +558,7 @@ h2 {
             background: #ddd;
             -webkit-filter: contrast(2) grayscale(1) opacity(.7) brightness(0.9);
             filter: contrast(2) grayscale(1) opacity(.7) brightness(0.9);
-            
+
             &:hover {
                 -webkit-transition:-webkit-filter .3s;
                 transition:filter .3s,-webkit-filter .3s;
@@ -562,14 +566,14 @@ h2 {
                 filter: none;
             }
         }
-        
+
         .student-name {
             font-size: 1.3em;
             max-height: 20px;
             padding-bottom: 15px;
             margin-bottom: 0px;
         }
-        
+
         .student-twitter, .student-linkedin {
             display: inline-block;
             a {
@@ -579,7 +583,7 @@ h2 {
                 color: $color-white;
                 font-size: 0.9em;
                 text-decoration: none;
-                
+
                 &:hover {
                     background-color: darken($color-green, 3%);
                 }
@@ -634,7 +638,7 @@ h2 {
     padding-bottom: 5px;
     color: $color-white;
     width: 100%;
-    
+
     .form-control{
         border-radius: 0;
         background-color: lighten($color-green, 40%);
@@ -657,8 +661,8 @@ h2 {
 
     .form-group {
         margin-bottom: 0em;
-    } 
-    
+    }
+
     .btn {
         padding: 1em 1.5em;
         background-color: lighten($color-green, 2%);
@@ -676,30 +680,30 @@ h2 {
             outline: none;
         }
     }
-    
+
     @media screen and (max-width: 480px) {
         .btn, .form-control {
             width: 100%;
         }
     }
-    
+
     .response {
         margin-top: 15px;
         font-weight: bold;
         letter-spacing: 1px;
     }
-} 
+}
 
 .footer, .mailinglist {
     background-color: $color-dark-grey;
-    
+
     p {
         font-size: 0.9em;
         padding-top: 5px;
         padding-bottom: 5px;
         color: $color-white;
     }
-    
+
     a {
         color: lighten($color-super-light-grey, 20%);
     }
@@ -711,25 +715,35 @@ h2 {
 
 .projects {
     background: $color-white !important;
-    .project {
-        img {
-            padding-left: 15px;
-            padding-top: 25px;
-            max-width: 150px;
+    .constraint {
+      .project {
+        .project-image {
+          width:25%;
+          float:left;
+          img {
+              padding-left: 15px;
+              padding-top: 25px;
+              max-width: 150px;
+          }
         }
-        h3 {
-            text-align: left;
-            font-size: 1.3em;
-            font-weight: 700;
-            text-transform: none;
+        .project-content {
+          width:75%;
+          float:right;
+          h3 {
+              text-align: left;
+              font-size: 1.3em;
+              font-weight: 700;
+              text-transform: none;
+          }
+          p.sponsor {
+              font-style:italic;
+          }
+          p {
+              line-height: 1.5em;
+              font-size: 1.2em;
+          }
         }
-        p.sponsor {
-            font-style:italic;
-        }
-        p {
-            line-height: 1.5em;
-            font-size: 1.2em;
-        }
+      }
     }
     .text-center {
         padding-bottom: 50px;
@@ -740,8 +754,31 @@ h2 {
     }
 }
 
+@media screen and (max-width: 768px){
+  .projects {
+    .constraint {
+      .project {
+        .project-image {
+          float:none;
+          width:100%;
+          text-align: center
+        }
+
+        .project-content {
+          float:none;
+          width:100%;
+          text-align: center;
+          h3 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Change placeholder text-color
-   Do not group these rules 
+   Do not group these rules
 */
 *::-webkit-input-placeholder {
     color: lighten($color-dark-grey, 20%);
