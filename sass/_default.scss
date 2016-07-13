@@ -717,20 +717,25 @@ h2 {
     background: $color-white !important;
     .constraint {
       .project {
-        .project-image {
-          width:25%;
-          float:left;
-          img {
-              padding-left: 15px;
-              padding-top: 25px;
-              max-width: 150px;
+
+          width:50%;
+          float: left;
+          margin-bottom: 2em;
+          
+          &:nth-child(2n) {
+              clear: left; 
           }
+
+        .project-image {
+          width:100%;
+          text-align: center
         }
+
         .project-content {
-          width:75%;
-          float:right;
+          width:90%;
+          margin: auto;
+          text-align: center;
           h3 {
-              text-align: left;
               font-size: 1.3em;
               font-weight: 700;
               text-transform: none;
@@ -758,20 +763,7 @@ h2 {
   .projects {
     .constraint {
       .project {
-        .project-image {
-          float:none;
-          width:100%;
-          text-align: center
-        }
-
-        .project-content {
-          float:none;
-          width:100%;
-          text-align: center;
-          h3 {
-            text-align: center;
-          }
-        }
+          width: 100%;
       }
     }
   }

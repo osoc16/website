@@ -526,26 +526,28 @@ h2 {
 * ============================== */
 .projects {
   background: pink !important; }
-  .projects .constraint .project .project-image {
-    width: 25%;
-    float: left; }
-    .projects .constraint .project .project-image img {
-      padding-left: 15px;
-      padding-top: 25px;
-      max-width: 150px; }
-  .projects .constraint .project .project-content {
-    width: 75%;
-    float: right; }
-    .projects .constraint .project .project-content h3 {
-      text-align: left;
-      font-size: 1.3em;
-      font-weight: 700;
-      text-transform: none; }
-    .projects .constraint .project .project-content p.sponsor {
-      font-style: italic; }
-    .projects .constraint .project .project-content p {
-      line-height: 1.5em;
-      font-size: 1.2em; }
+  .projects .constraint .project {
+    width: 50%;
+    float: left;
+    margin-bottom: 2em; }
+    .projects .constraint .project:nth-child(2n) {
+      clear: left; }
+    .projects .constraint .project .project-image {
+      width: 100%;
+      text-align: center; }
+    .projects .constraint .project .project-content {
+      width: 90%;
+      margin: auto;
+      text-align: center; }
+      .projects .constraint .project .project-content h3 {
+        font-size: 1.3em;
+        font-weight: 700;
+        text-transform: none; }
+      .projects .constraint .project .project-content p.sponsor {
+        font-style: italic; }
+      .projects .constraint .project .project-content p {
+        line-height: 1.5em;
+        font-size: 1.2em; }
   .projects .text-center {
     padding-bottom: 50px; }
   .projects .btn-primary {
@@ -553,16 +555,8 @@ h2 {
     margin: 10px auto; }
 
 @media screen and (max-width: 768px) {
-  .projects .constraint .project .project-image {
-    float: none;
-    width: 100%;
-    text-align: center; }
-  .projects .constraint .project .project-content {
-    float: none;
-    width: 100%;
-    text-align: center; }
-    .projects .constraint .project .project-content h3 {
-      text-align: center; } }
+  .projects .constraint .project {
+    width: 100%; } }
 
 /* Change placeholder text-color
    Do not group these rules
